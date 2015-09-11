@@ -1,0 +1,2810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<title>
+
+		Documentation &middot; Application theme &middot; Official Bootstrap Themes
+
+	</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link href="../assets/css/toolkit.css" rel="stylesheet">
+
+	<link href="../assets/css/docs.css" rel="stylesheet">
+
+	<link href="../assets/css/application.css" rel="stylesheet">
+
+	<style>
+		/* note: this is a hack for ios iframe for bootstrap themes shopify page */
+		/* this chunk of css is not part of the toolkit :) */
+		body
+		{
+			width: 1px;
+			min-width: 100%;
+			*width: 100%;
+		}
+	</style>
+
+</head>
+
+
+<body class="anf">
+<div class="anp" id="app-growl"></div>
+
+<nav class="ck pd ot app-navbar">
+	<div class="by">
+		<div class="os">
+			<button type="button" class="ov collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+				<span class="cv">Toggle navigation</span>
+				<span class="ow"></span>
+				<span class="ow"></span>
+				<span class="ow"></span>
+			</button>
+			<a class="e" href="../index.html">
+				<img src="../assets/img/brand-white.png" alt="brand">
+			</a>
+		</div>
+		<div class="f collapse" id="navbar-collapse-main">
+
+			<ul class="nav navbar-nav st">
+				<li>
+					<a href="../index.html">Home</a>
+				</li>
+				<li>
+					<a href="../profile/index.html">Profile</a>
+				</li>
+				<li>
+					<a data-toggle="modal" href="#msgModal">Messages</a>
+				</li>
+				<li class="active">
+					<a href="../docs/index.html">Docs</a>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav oh ald st">
+				<li>
+					<a class="g" href="../notifications/index.html">
+						<span class="h wr"></span>
+					</a>
+				</li>
+				<li>
+					<button class="cg fm oy ank" data-toggle="popover">
+						<img class="cu" src="../assets/img/avatar-dhg.png">
+					</button>
+				</li>
+			</ul>
+
+			<form class="ox oh i" role="search">
+				<div class="et">
+					<input type="text" class="form-control" data-action="grow" placeholder="Search">
+				</div>
+			</form>
+
+			<ul class="nav navbar-nav su sv sw">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../profile/index.html">Profile</a></li>
+				<li><a href="../notifications/index.html">Notifications</a></li>
+				<li><a data-toggle="modal" href="#msgModal">Messages</a></li>
+				<li><a href="../docs/index.html">Docs</a></li>
+				<li><a href="#" data-action="growl">Growl</a></li>
+				<li><a href="../login/index.html">Logout</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav hidden">
+				<li><a href="#" data-action="growl">Growl</a></li>
+				<li><a href="../login/index.html">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="cd fade" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="msgModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="d">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<button type="button" class="cg fx fp eg k js-newMsg">New message</button>
+				<h4 class="modal-title">Messages</h4>
+			</div>
+
+			<div class="modal-body ame js-modalBody">
+				<div class="up">
+					<div class="qp cj ca js-msgGroup">
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                <img class="cu qi" src="../assets/img/avatar-fat.jpg">
+                </span>
+
+								<div class="qh">
+									<strong>Jacob Thornton</strong> and <strong>1 other</strong>
+
+									<div class="aoe">
+										Aenean eu leo quam. Pellentesque ornare sem lacinia quam &hellip;
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                  <img class="cu qi" src="../assets/img/avatar-mdo.png">
+                </span>
+
+								<div class="qh">
+									<strong>Mark Otto</strong> and <strong>3 others</strong>
+
+									<div class="aoe">
+										Brunch sustainable placeat vegan bicycle rights yeah…
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                  <img class="cu qi" src="../assets/img/avatar-dhg.png">
+                </span>
+
+								<div class="qh">
+									<strong>Dave Gamache</strong>
+
+									<div class="aoe">
+										Brunch sustainable placeat vegan bicycle rights yeah…
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                  <img class="cu qi" src="../assets/img/avatar-fat.jpg">
+                </span>
+
+								<div class="qh">
+									<strong>Jacob Thornton</strong> and <strong>1 other</strong>
+
+									<div class="aoe">
+										Aenean eu leo quam. Pellentesque ornare sem lacinia quam &hellip;
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                  <img class="cu qi" src="../assets/img/avatar-mdo.png">
+                </span>
+
+								<div class="qh">
+									<strong>Mark Otto</strong> and <strong>3 others</strong>
+
+									<div class="aoe">
+										Brunch sustainable placeat vegan bicycle rights yeah…
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                  <img class="cu qi" src="../assets/img/avatar-dhg.png">
+                </span>
+
+								<div class="qh">
+									<strong>Dave Gamache</strong>
+
+									<div class="aoe">
+										Brunch sustainable placeat vegan bicycle rights yeah…
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                  <img class="cu qi" src="../assets/img/avatar-fat.jpg">
+                </span>
+
+								<div class="qh">
+									<strong>Jacob Thornton</strong> and <strong>1 other</strong>
+
+									<div class="aoe">
+										Aenean eu leo quam. Pellentesque ornare sem lacinia quam &hellip;
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                  <img class="cu qi" src="../assets/img/avatar-mdo.png">
+                </span>
+
+								<div class="qh">
+									<strong>Mark Otto</strong> and <strong>3 others</strong>
+
+									<div class="aoe">
+										Brunch sustainable placeat vegan bicycle rights yeah…
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="b">
+							<div class="qg">
+                <span class="qk">
+                  <img class="cu qi" src="../assets/img/avatar-dhg.png">
+                </span>
+
+								<div class="qh">
+									<strong>Dave Gamache</strong>
+
+									<div class="aoe">
+										Brunch sustainable placeat vegan bicycle rights yeah…
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="hide ali js-conversation">
+						<ul class="qp aoa">
+							<li class="qg aod alt">
+								<div class="qh">
+									<div class="aob">
+										Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit
+										libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo
+										risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
+									</div>
+									<div class="aoc">
+										<small class="dp">
+											<a href="#">Dave Gamache</a> at 4:20PM
+										</small>
+									</div>
+								</div>
+								<a class="qj" href="#">
+									<img class="cu qi" src="../assets/img/avatar-dhg.png">
+								</a>
+							</li>
+
+							<li class="qg alt">
+								<a class="qk" href="#">
+									<img class="cu qi" src="../assets/img/avatar-fat.jpg">
+								</a>
+
+								<div class="qh">
+									<div class="aob">
+										Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus,
+										nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel
+										scelerisque nisl consectetur et.
+									</div>
+									<div class="aob">
+										Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cras
+										justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+										vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis
+										risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at
+										eros.
+									</div>
+									<div class="aob">
+										Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Integer posuere erat a ante
+										venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Donec id elit
+										non mi porta gravida at eget metus.
+									</div>
+									<div class="aoc">
+										<small class="dp">
+											<a href="#">Fat</a> at 4:28PM
+										</small>
+									</div>
+								</div>
+							</li>
+
+							<li class="qg alt">
+								<a class="qk" href="#">
+									<img class="cu qi" src="../assets/img/avatar-mdo.png">
+								</a>
+
+								<div class="qh">
+									<div class="aob">
+										Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.
+										Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna
+										mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia
+										bibendum nulla sed consectetur.
+									</div>
+									<div class="aob">
+										Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit
+										aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+										elit.
+									</div>
+									<div class="aoc">
+										<small class="dp">
+											<a href="#">Mark Otto</a> at 4:20PM
+										</small>
+									</div>
+								</div>
+							</li>
+
+							<li class="qg aod alt">
+								<div class="qh">
+									<div class="aob">
+										Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit
+										libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo
+										risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
+									</div>
+									<div class="aoc">
+										<small class="dp">
+											<a href="#">Dave Gamache</a> at 4:20PM
+										</small>
+									</div>
+								</div>
+								<a class="qj" href="#">
+									<img class="cu qi" src="../assets/img/avatar-dhg.png">
+								</a>
+							</li>
+
+							<li class="qg alt">
+								<a class="qk" href="#">
+									<img class="cu qi" src="../assets/img/avatar-fat.jpg">
+								</a>
+
+								<div class="qh">
+									<div class="aob">
+										Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus,
+										nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel
+										scelerisque nisl consectetur et.
+									</div>
+									<div class="aob">
+										Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cras
+										justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+										vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis
+										risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at
+										eros.
+									</div>
+									<div class="aob">
+										Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Integer posuere erat a ante
+										venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Donec id elit
+										non mi porta gravida at eget metus.
+									</div>
+									<div class="aoc">
+										<small class="dp">
+											<a href="#">Fat</a> at 4:28PM
+										</small>
+									</div>
+								</div>
+							</li>
+
+							<li class="qg all">
+								<a class="qk" href="#">
+									<img class="cu qi" src="../assets/img/avatar-mdo.png">
+								</a>
+
+								<div class="qh">
+									<div class="aob">
+										Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.
+										Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna
+										mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia
+										bibendum nulla sed consectetur.
+									</div>
+									<div class="aob">
+										Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit
+										aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+										elit.
+									</div>
+									<div class="aoc">
+										<small class="dp">
+											<a href="#">Mark Otto</a> at 4:20PM
+										</small>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="bw" id="content">
+	<div class="by">
+		<h1>Documentation</h1>
+
+		<p>Find out what's included in your Bootstrap theme and how to compile source files. Includes live examples and code
+			snippets for every new component.</p>
+	</div>
+</div>
+<div class="by docs-content">
+
+	<h1 id="contents">Contents</h1>
+
+	<ul id="markdown-toc">
+		<li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+		<li><a href="#intro" id="markdown-toc-intro">Intro</a></li>
+		<li><a href="#whats-included" id="markdown-toc-whats-included">What’s included</a>
+			<ul>
+				<li><a href="#getting-started" id="markdown-toc-getting-started">Getting started</a></li>
+				<li><a href="#gulpfilejs" id="markdown-toc-gulpfilejs">Gulpfile.js</a></li>
+				<li><a href="#theme-source-code" id="markdown-toc-theme-source-code">Theme source code</a></li>
+			</ul>
+		</li>
+		<li><a href="#custom-builds" id="markdown-toc-custom-builds">Custom builds</a></li>
+		<li><a href="#basic-template" id="markdown-toc-basic-template">Basic template</a></li>
+		<li><a href="#utilities" id="markdown-toc-utilities">Utilities</a>
+			<ul>
+				<li><a href="#positioning" id="markdown-toc-positioning">Positioning</a></li>
+				<li><a href="#width" id="markdown-toc-width">Width</a></li>
+				<li><a href="#margin-and-padding" id="markdown-toc-margin-and-padding">Margin and padding</a></li>
+				<li><a href="#responsive-text-alignment" id="markdown-toc-responsive-text-alignment">Responsive text
+					alignment</a></li>
+			</ul>
+		</li>
+		<li><a href="#components" id="markdown-toc-components">Components</a>
+			<ul>
+				<li><a href="#entypo" id="markdown-toc-entypo">Entypo</a>
+					<ul>
+						<li><a href="#available-icons" id="markdown-toc-available-icons">Available icons</a></li>
+						<li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+					</ul>
+				</li>
+				<li><a href="#outline-buttons" id="markdown-toc-outline-buttons">Outline buttons</a></li>
+				<li><a href="#pill-buttons" id="markdown-toc-pill-buttons">Pill buttons</a></li>
+				<li><a href="#avatar-list" id="markdown-toc-avatar-list">Avatar list</a></li>
+				<li><a href="#growl" id="markdown-toc-growl">Growl</a></li>
+				<li><a href="#profile-header" id="markdown-toc-profile-header">Profile header</a></li>
+				<li><a href="#panel-profile" id="markdown-toc-panel-profile">Panel profile</a></li>
+				<li><a href="#panel-link-list" id="markdown-toc-panel-link-list">Panel link list</a></li>
+				<li><a href="#media-list-steam" id="markdown-toc-media-list-steam">Media list steam</a></li>
+				<li><a href="#media-list-conversation" id="markdown-toc-media-list-conversation">Media list conversation</a>
+				</li>
+				<li><a href="#media-list-users" id="markdown-toc-media-list-users">Media list users</a></li>
+				<li><a href="#custom-form-controls" id="markdown-toc-custom-form-controls">Custom form controls</a></li>
+				<li><a href="#custom-modals" id="markdown-toc-custom-modals">Custom Modals</a></li>
+				<li><a href="#custom-containers" id="markdown-toc-custom-containers">Custom containers</a></li>
+			</ul>
+		</li>
+		<li><a href="#plugins" id="markdown-toc-plugins">Plugins</a>
+			<ul>
+				<li><a href="#image-grids" id="markdown-toc-image-grids">Image grids</a>
+					<ul>
+						<li><a href="#options" id="markdown-toc-options">Options</a></li>
+						<li><a href="#javascript-api" id="markdown-toc-javascript-api">JavaScript API</a></li>
+						<li><a href="#data-api" id="markdown-toc-data-api">Data Api</a></li>
+					</ul>
+				</li>
+				<li><a href="#zoom" id="markdown-toc-zoom">Zoom</a>
+					<ul>
+						<li><a href="#data-api-1" id="markdown-toc-data-api-1">Data API</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<h1 id="intro">Intro</h1>
+
+	<p>Hey there! You’re looking at the docs for an Official Bootstrap Theme—thanks for your purchase! This theme has been
+		lovingly crafted by Bootstrap’s founders and friends to help you build awesome projects on the web. Let’s dive
+		in.</p>
+
+	<p>Each theme is designed as it’s own toolkit—a series of well designed, intuitive, and cohesive components—built on
+		top of Bootstrap. If you’ve used Bootstrap itself, you’ll find this all super familiar, but with new aesthetics, new
+		components, beautiful and extensive examples, and easy-to-use build tools and documentation.</p>
+
+	<p>Since this theme is based on Bootstrap, and includes nearly everything Bootstrap itself does, you’ll want to give
+		the <a href="http://getbootstrap.com">official project documentation</a> a once over before continuing. There’s also
+		<a href="../bootstrap/">the kitchen sink</a>—a one-page view of all Bootstrap’s components restyled by this theme.
+	</p>
+
+	<p>For everything else, including compiling and using this Bootstrap theme, read through the docs below.</p>
+
+	<p>Thanks, and enjoy!</p>
+
+	<h1 id="whats-included">What’s included</h1>
+
+	<p>Within your Bootstrap theme you’ll find the following directories and files, grouping common resources and
+		providing both compiled and minified distribution files, as well as raw source files.</p>
+
+	<div class="a"><pre><code class="aos" data-lang="bash">theme/
+		├── gulpfile.js
+		├── package.json
+		├── README.md
+		├── docs/
+		├── less/
+		│ ├── bootstrap/
+		│ ├── custom/
+		│ ├── variables.less
+		│ └── toolkit.less
+		├── js/
+		│ ├── bootstrap/
+		│ └── custom/
+		├── fonts/
+		│ ├── bootstrap-entypo.eot
+		│ ├── bootstrap-entypo.svg
+		│ ├── bootstrap-entypo.ttf
+		│ ├── bootstrap-entypo.woff
+		│ └── bootstrap-entypo.woff2
+		└── dist/
+		├── toolkit.css
+		├── toolkit.css.map
+		├── toolkit.min.css
+		├── toolkit.min.css.map
+		├── toolkit.js
+		└── toolkit.min.js</code></pre>
+	</div>
+
+	<h2 id="getting-started">Getting started</h2>
+
+	<p>To view your Bootstrap Theme documentation, simply find the docs directory and open index.html in your favorite
+		browser.</p>
+
+	<div class="a">
+		<pre><code class="aos" data-lang="bash"><span class="ab">$ </span>open docs/index.html</code></pre>
+	</div>
+
+	<h2 id="gulpfilejs">Gulpfile.js</h2>
+
+	<p>If you’re after more customization we’ve also included a custom <a href="http://gulpjs.com">Gulp</a> file, which
+		can be used to quickly re-compile a theme’s CSS and JS. You’ll need to install both
+		<a href="https://nodejs.org/en/download/">Node</a> and Gulp before using our included <code>gulpfile.js</code>.</p>
+
+	<p>Once node is installed, run the following npm command to install Gulp.</p>
+
+	<div class="a">
+		<pre><code class="aos" data-lang="bash"><span class="ab">$ </span>npm install gulp -g</code></pre>
+	</div>
+
+	<p>When you’re done, make sure you’ve installed the rest of the theme’s dependencies:</p>
+
+	<div class="a">
+		<pre><code class="aos" data-lang="bash"><span class="ab">$ </span>npm install</code></pre>
+	</div>
+
+	<p>Now, modify your source files and run <code>gulp</code> to generate new local <code>dist/</code> files
+		automatically. <strong>Be aware that this replaces existing <code>dist/</code> files</strong>, so proceed with
+		caution.</p>
+
+	<h2 id="theme-source-code">Theme source code</h2>
+
+	<p>The <code>less/</code>, <code>js/</code>, and <code>fonts/</code> directories contain the source code for our CSS,
+		JS, and icon fonts (respectively). Within the <code>less/</code> and <code>js/</code> directories you’ll find two
+		subdirectories:</p>
+
+	<ul>
+		<li><code>bootstrap/</code>, which contains the most recently released version of Bootstrap (v3.3.5).</li>
+		<li><code>custom/</code>, which contains all of the custom components and overrides authored specifically for this
+			theme.
+		</li>
+	</ul>
+
+	<p>The <code>dist/</code> folder includes everything above, built into single CSS and JS files that can easily be
+		integrated into your project.</p>
+
+	<p>The <code>docs/</code> folder includes the source code for our documentation, as well as a handful of live
+		examples.</p>
+
+	<p>The remaining files not specifically mentioned above provide support for packages, license information, and
+		development.</p>
+
+	<h1 id="custom-builds">Custom builds</h1>
+
+	<p>Leverage the included source files and <code>gulpfile.js</code> to customize your Bootstrap Theme for your exact
+		needs. Change variables, exclude components, and more.</p>
+
+	<ul>
+		<li><code>toolkit.less</code> is the entry point for Less files - to build your own custom build, simply modify your
+			local custom files or edit the includes listed here. Note: some themes also rely on a shared
+			<code>components.less</code> file, which you can find imported in your <code>toolkit.less</code>.
+		</li>
+		<li><code>variables.less</code> is home to your theme’s variables. Note that your theme’s <code>variables</code>
+			file depends on and overrides an existing Bootstrap variable file (found in /less/bootstrap/variables.less).
+		</li>
+	</ul>
+
+	<h1 id="basic-template">Basic template</h1>
+
+	<p>The basic template is a guideline for how to structure your pages when building with a Bootstrap Theme. Included
+		below are all the necessary bits for using the theme’s CSS and JS, as well as some friendly reminders.</p>
+
+	<p>Copy the example below into a new HTML file to get started with it.</p>
+
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="s">&lt;!DOCTYPE html&gt;</span>
+		<span class="aw">&lt;html</span>
+		<span class="am">lang=</span><span class="al">"en"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;head&gt;</span>
+		<span class="n">&lt;!-- These meta tags come first. --&gt;</span>
+		<span class="aw">&lt;meta</span> <span class="am">charset=</span><span class="al">"utf-8"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;meta</span> <span class="am">http-equiv=</span><span class="al">"X-UA-Compatible"</span>
+		<span class="am">content=</span><span class="al">"IE=edge"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;meta</span> <span class="am">name=</span><span class="al">"viewport"</span> <span class="am">content=</span><span class="al">"width=device-width, initial-scale=1"</span><span class="aw">&gt;</span>
+
+		<span class="aw">&lt;title&gt;</span>Bootstrap Theme Example<span class="aw">&lt;/title&gt;</span>
+
+		<span class="n">&lt;!-- Include the CSS --&gt;</span>
+		<span class="aw">&lt;link</span> <span class="am">href=</span><span class="al">"dist/toolkit.min.css"</span>
+		<span class="am">rel=</span><span class="al">"stylesheet"</span><span class="aw">&gt;</span>
+
+		<span class="aw">&lt;/head&gt;</span>
+		<span class="aw">&lt;body&gt;</span>
+		<span class="aw">&lt;h1&gt;</span>Hello, world!<span class="aw">&lt;/h1&gt;</span>
+
+		<span class="n">&lt;!-- Include jQuery (required) and the JS --&gt;</span>
+		<span class="aw">&lt;script </span><span class="am">src=</span><span class="al">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span><span class="aw">&gt;&lt;/script&gt;</span>
+		<span class="aw">&lt;script </span><span class="am">src=</span><span class="al">"dist/toolkit.min.js"</span><span class="aw">&gt;&lt;/script&gt;</span>
+		<span class="aw">&lt;/body&gt;</span>
+		<span class="aw">&lt;/html&gt;</span></code></pre>
+	</div>
+
+	<h1 id="utilities">Utilities</h1>
+
+	<p>Utilities, or utility classes, are a series of single-purpose, immutable classes designed to reduce duplication in
+		your compiled CSS. Each utility takes a common CSS property-value pair and turns it into a reusable class.</p>
+
+	<p>These utilities are in addition to those <a href="">provided in Bootstrap</a>.</p>
+
+	<h2 id="positioning">Positioning</h2>
+
+	<div class="a"><pre><code class="aou" data-lang="scss"><span class="ao">.pos-r</span> <span class="aov">{</span>
+		<span class="au">position</span><span class="aov">:</span> <span class="an">relative</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.pos-a</span> <span class="aov">{</span> <span class="au">position</span><span class="aov">:</span>
+		<span class="an">absolute</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.pos-f</span> <span class="aov">{</span> <span class="au">position</span><span class="aov">:</span>
+		<span class="an">fixed</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span></code></pre>
+	</div>
+
+	<h2 id="width">Width</h2>
+
+	<div class="a"><pre><code class="aou" data-lang="scss"><span class="ao">.w-sm</span> <span class="aov">{</span>
+		<span class="au">width</span><span class="aov">:</span> <span class="ak">25%</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.w-md</span> <span class="aov">{</span> <span class="au">width</span><span class="aov">:</span>
+		<span class="ak">50%</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.w-lg</span> <span class="aov">{</span> <span class="au">width</span><span class="aov">:</span>
+		<span class="ak">75%</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.w-full</span> <span class="aov">{</span> <span class="au">width</span><span class="aov">:</span>
+		<span class="ak">100%</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span></code></pre>
+	</div>
+
+	<h2 id="margin-and-padding">Margin and padding</h2>
+
+	<p>Assign <code>margin</code> or <code>padding</code> to an element or a subset of it’s sides with shorthand classes.
+		Includes support for individual properties, all properties, and vertical and horizontal properties. All classes are
+		multiples on the global default value, <code>20px</code>.</p>
+
+	<div class="a"><pre><code class="aou" data-lang="scss"><span class="ao">.m-a-0</span> <span class="aov">{</span>
+		<span class="au">margin</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-t-0</span> <span class="aov">{</span>
+		<span class="au">margin-top</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-r-0</span> <span class="aov">{</span>
+		<span class="au">margin-right</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-b-0</span> <span class="aov">{</span>
+		<span class="au">margin-bottom</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-l-0</span> <span class="aov">{</span>
+		<span class="au">margin-left</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+
+		<span class="ao">.m-a</span> <span class="aov">{</span> <span class="au">margin</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-t</span> <span class="aov">{</span> <span class="au">margin-top</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-y</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.m-r</span> <span class="aov">{</span>
+		<span class="au">margin-right</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-x</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.m-b</span> <span class="aov">{</span>
+		<span class="au">margin-bottom</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-y</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.m-l</span> <span class="aov">{</span>
+		<span class="au">margin-left</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-x</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.m-x</span> <span class="aov">{</span>
+		<span class="au">margin-right</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-x</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">margin-left</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-x</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.m-y</span> <span class="aov">{</span> <span class="au">margin-top</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-y</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">margin-bottom</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-y</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.m-x-auto</span> <span class="aov">{</span>
+		<span class="au">margin-right</span><span class="aov">:</span> <span class="an">auto</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">margin-left</span><span class="aov">:</span> <span class="an">auto</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+
+		<span class="ao">.m-a-md</span> <span class="aov">{</span> <span class="au">margin</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-t-md</span> <span class="aov">{</span>
+		<span class="au">margin-top</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-r-md</span> <span class="aov">{</span>
+		<span class="au">margin-right</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-b-md</span> <span class="aov">{</span>
+		<span class="au">margin-bottom</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-l-md</span> <span class="aov">{</span>
+		<span class="au">margin-left</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-x-md</span> <span class="aov">{</span>
+		<span class="au">margin-right</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-x</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">margin-left</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-x</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-y-md</span> <span class="aov">{</span>
+		<span class="au">margin-top</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">margin-bottom</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+
+		<span class="ao">.m-a-lg</span> <span class="aov">{</span> <span class="au">margin</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-t-lg</span> <span class="aov">{</span>
+		<span class="au">margin-top</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-r-lg</span> <span class="aov">{</span>
+		<span class="au">margin-right</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-b-lg</span> <span class="aov">{</span>
+		<span class="au">margin-bottom</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-l-lg</span> <span class="aov">{</span>
+		<span class="au">margin-left</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-x-lg</span> <span class="aov">{</span>
+		<span class="au">margin-right</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-x</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">margin-left</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-x</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.m-y-lg</span> <span class="aov">{</span>
+		<span class="au">margin-top</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">margin-bottom</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span></code></pre>
+	</div>
+
+	<div class="a"><pre><code class="aou" data-lang="scss"><span class="ao">.p-a-0</span> <span class="aov">{</span>
+		<span class="au">padding</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-t-0</span> <span class="aov">{</span>
+		<span class="au">padding-top</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-r-0</span> <span class="aov">{</span>
+		<span class="au">padding-right</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-b-0</span> <span class="aov">{</span>
+		<span class="au">padding-bottom</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-l-0</span> <span class="aov">{</span>
+		<span class="au">padding-left</span><span class="aov">:</span> <span class="ak">0</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+
+		<span class="ao">.p-a</span> <span class="aov">{</span> <span class="au">padding</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-t</span> <span class="aov">{</span>
+		<span class="au">padding-top</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-y</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.p-r</span> <span class="aov">{</span>
+		<span class="au">padding-right</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-x</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.p-b</span> <span class="aov">{</span>
+		<span class="au">padding-bottom</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-y</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.p-l</span> <span class="aov">{</span>
+		<span class="au">padding-left</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-x</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.p-x</span> <span class="aov">{</span>
+		<span class="au">padding-right</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-x</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">padding-left</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-x</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.p-y</span> <span class="aov">{</span>
+		<span class="au">padding-top</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-y</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">padding-bottom</span><span class="aov">:</span>
+		<span class="q">@</span><span class="aow">spacer-y</span> <span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span>
+
+		<span class="ao">.p-a-md</span> <span class="aov">{</span> <span class="au">padding</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-t-md</span> <span class="aov">{</span>
+		<span class="au">padding-top</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-r-md</span> <span class="aov">{</span>
+		<span class="au">padding-right</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-b-md</span> <span class="aov">{</span>
+		<span class="au">padding-bottom</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-l-md</span> <span class="aov">{</span>
+		<span class="au">padding-left</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-x-md</span> <span class="aov">{</span>
+		<span class="au">padding-right</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-x</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">padding-left</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-x</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-y-md</span> <span class="aov">{</span>
+		<span class="au">padding-top</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">padding-bottom</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">1</span><span class="bc">.5</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+
+		<span class="ao">.p-a-lg</span> <span class="aov">{</span> <span class="au">padding</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-t-lg</span> <span class="aov">{</span>
+		<span class="au">padding-top</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-r-lg</span> <span class="aov">{</span>
+		<span class="au">padding-right</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-b-lg</span> <span class="aov">{</span>
+		<span class="au">padding-bottom</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-l-lg</span> <span class="aov">{</span>
+		<span class="au">padding-left</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-x-lg</span> <span class="aov">{</span>
+		<span class="au">padding-right</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-x</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">padding-left</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-x</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="ao">.p-y-lg</span> <span class="aov">{</span>
+		<span class="au">padding-top</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="au">padding-bottom</span><span class="aov">:</span>
+		<span class="aov">(</span><span class="q">@</span><span class="aow">spacer-y</span> <span class="q">*</span>
+		<span class="ak">3</span><span class="aov">)</span>
+		<span class="q">!</span><span class="aow">important</span><span class="aov">;</span>
+		<span class="aov">}</span></code></pre>
+	</div>
+
+	<h2 id="responsive-text-alignment">Responsive text alignment</h2>
+
+	<p>Use these classes to easily switch <code>text-align</code> across viewports when designing responsive pages.</p>
+
+	<div class="a"><pre><code class="aou" data-lang="scss"><span class="ao">.text-xs-left</span>
+		<span class="aov">{</span> <span class="au">text-align</span><span class="aov">:</span> <span class="an">left</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.text-xs-right</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span> <span class="an">right</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.text-xs-center</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span>
+		<span class="an">center</span><span class="aov">;</span> <span class="aov">}</span>
+
+		<span class="p">@media</span> <span class="aov">(</span><span class="aow">min-width</span><span class="q">:</span>
+		<span class="q">@</span><span class="aow">screen-sm-min</span><span class="aov">)</span> <span class="aov">{</span>
+		<span class="ao">.text-sm-left</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span> <span class="an">left</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.text-sm-right</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span> <span class="an">right</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.text-sm-center</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span>
+		<span class="an">center</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="aov">}</span>
+
+		<span class="p">@media</span> <span class="aov">(</span><span class="aow">min-width</span><span class="q">:</span>
+		<span class="q">@</span><span class="aow">screen-md-min</span><span class="aov">)</span> <span class="aov">{</span>
+		<span class="ao">.text-md-left</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span> <span class="an">left</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.text-md-right</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span> <span class="an">right</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.text-md-center</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span>
+		<span class="an">center</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="aov">}</span>
+
+		<span class="p">@media</span> <span class="aov">(</span><span class="aow">min-width</span><span class="q">:</span>
+		<span class="q">@</span><span class="aow">screen-lg-min</span><span class="aov">)</span> <span class="aov">{</span>
+		<span class="ao">.text-lg-left</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span> <span class="an">left</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.text-lg-right</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span> <span class="an">right</span><span class="aov">;</span>
+		<span class="aov">}</span>
+		<span class="ao">.text-lg-center</span> <span class="aov">{</span>
+		<span class="au">text-align</span><span class="aov">:</span>
+		<span class="an">center</span><span class="aov">;</span> <span class="aov">}</span>
+		<span class="aov">}</span></code></pre>
+	</div>
+
+	<h1 id="components">Components</h1>
+
+	<h2 id="entypo">Entypo</h2>
+
+	<p><a href="http://entypo.com">Entypo</a> is an awesome, high quality set of icon glyphs made by
+		<a href="http://www.danielbruce.se">Daniel Bruce</a>. We’ve replaced Bootstrap’s default icon font,
+		<a href="http://glyphicons.com">Glyhpicons</a>, with the complete Entypo set and Entypo social extension.</p>
+
+	<p>Simply use the new <code>icon</code> class and an <code>icon-{modifier}</code> on an inline element. See the
+		examples below for more details.</p>
+
+	<h3 id="available-icons">Available icons</h3>
+
+	<p>Below are all the original and social icons from Entypo that you can choose from:</p>
+
+	<div class="bx">
+		<span class="h va"></span>
+		<span class="h vb"></span>
+		<span class="h vc"></span>
+		<span class="h vd"></span>
+		<span class="h ve"></span>
+		<span class="h vh"></span>
+		<span class="h vf"></span>
+		<span class="h vg"></span>
+		<span class="h vi"></span>
+		<span class="h vj"></span>
+		<span class="h vk"></span>
+		<span class="h vl"></span>
+		<span class="h vm"></span>
+		<span class="h vn"></span>
+		<span class="h vp"></span>
+		<span class="h vq"></span>
+		<span class="h vr"></span>
+		<span class="h vs"></span>
+		<span class="h vt"></span>
+		<span class="h vu"></span>
+		<span class="h vv"></span>
+		<span class="h vw"></span>
+		<span class="h wb"></span>
+		<span class="h wc"></span>
+		<span class="h vx"></span>
+		<span class="h vy"></span>
+		<span class="h vz"></span>
+		<span class="h wa"></span>
+		<span class="h wd"></span>
+		<span class="h we"></span>
+		<span class="h wf"></span>
+		<span class="h wg"></span>
+		<span class="h wh"></span>
+		<span class="h wi"></span>
+		<span class="h wj"></span>
+		<span class="h wk"></span>
+		<span class="h wm"></span>
+		<span class="h wo"></span>
+		<span class="h wp"></span>
+		<span class="h wr"></span>
+		<span class="h ws"></span>
+		<span class="h wt"></span>
+		<span class="h wu"></span>
+		<span class="h wv"></span>
+		<span class="h ww"></span>
+		<span class="h wx"></span>
+		<span class="h wy"></span>
+		<span class="h wz"></span>
+		<span class="h xa"></span>
+		<span class="h xb"></span>
+		<span class="h xc"></span>
+		<span class="h xd"></span>
+		<span class="h xe"></span>
+		<span class="h xf"></span>
+		<span class="h xg"></span>
+		<span class="h xh"></span>
+		<span class="h xi"></span>
+		<span class="h zm"></span>
+		<span class="h xj"></span>
+		<span class="h xk"></span>
+		<span class="h xl"></span>
+		<span class="h xm"></span>
+		<span class="h xn"></span>
+		<span class="h xu"></span>
+		<span class="h xo"></span>
+		<span class="h xp"></span>
+		<span class="h xq"></span>
+		<span class="h xr"></span>
+		<span class="h xs"></span>
+		<span class="h uw"></span>
+		<span class="h ux"></span>
+		<span class="h xt"></span>
+		<span class="h xv"></span>
+		<span class="h xw"></span>
+		<span class="h xx"></span>
+		<span class="h xy"></span>
+		<span class="h xz"></span>
+		<span class="h ya"></span>
+		<span class="h yb"></span>
+		<span class="h yc"></span>
+		<span class="h yd"></span>
+		<span class="h ye"></span>
+		<span class="h yf"></span>
+		<span class="h yg"></span>
+		<span class="h yh"></span>
+		<span class="h yi"></span>
+		<span class="h yj"></span>
+		<span class="h yk"></span>
+		<span class="h yl"></span>
+		<span class="h ym"></span>
+		<span class="h yn"></span>
+		<span class="h yo"></span>
+		<span class="h yp"></span>
+		<span class="h yq"></span>
+		<span class="h yr"></span>
+		<span class="h ys"></span>
+		<span class="h yt"></span>
+		<span class="h yu"></span>
+		<span class="h yv"></span>
+		<span class="h yw"></span>
+		<span class="h zg"></span>
+		<span class="h yy"></span>
+		<span class="h yz"></span>
+		<span class="h za"></span>
+		<span class="h zb"></span>
+		<span class="h zc"></span>
+		<span class="h zd"></span>
+		<span class="h ze"></span>
+		<span class="h zf"></span>
+		<span class="h zh"></span>
+		<span class="h zi"></span>
+		<span class="h zj"></span>
+		<span class="h zk"></span>
+		<span class="h zl"></span>
+		<span class="h zn"></span>
+		<span class="h zo"></span>
+		<span class="h zp"></span>
+		<span class="h zq"></span>
+		<span class="h zs"></span>
+		<span class="h zr"></span>
+		<span class="h zt"></span>
+		<span class="h zu"></span>
+		<span class="h zx"></span>
+		<span class="h zv"></span>
+		<span class="h zy"></span>
+		<span class="h zw"></span>
+		<span class="h zz"></span>
+		<span class="h aac"></span>
+		<span class="h aad"></span>
+		<span class="h aae"></span>
+		<span class="h aag"></span>
+		<span class="h aah"></span>
+		<span class="h aai"></span>
+		<span class="h aaj"></span>
+		<span class="h aak"></span>
+		<span class="h aal"></span>
+		<span class="h aam"></span>
+		<span class="h aan"></span>
+		<span class="h aap"></span>
+		<span class="h aar"></span>
+		<span class="h aaq"></span>
+		<span class="h aau"></span>
+		<span class="h aav"></span>
+		<span class="h aaw"></span>
+		<span class="h aax"></span>
+		<span class="h aay"></span>
+		<span class="h aaz"></span>
+		<span class="h abd"></span>
+		<span class="h abe"></span>
+		<span class="h abf"></span>
+		<span class="h abg"></span>
+		<span class="h abh"></span>
+		<span class="h abi"></span>
+		<span class="h abm"></span>
+		<span class="h abj"></span>
+		<span class="h abk"></span>
+		<span class="h abl"></span>
+		<span class="h abn"></span>
+		<span class="h abp"></span>
+		<span class="h abq"></span>
+		<span class="h abr"></span>
+		<span class="h abu"></span>
+		<span class="h aca"></span>
+		<span class="h acb"></span>
+		<span class="h acd"></span>
+		<span class="h ace"></span>
+		<span class="h acg"></span>
+		<span class="h acf"></span>
+		<span class="h aci"></span>
+		<span class="h ach"></span>
+		<span class="h acj"></span>
+		<span class="h ack"></span>
+		<span class="h aco"></span>
+		<span class="h acn"></span>
+		<span class="h acp"></span>
+		<span class="h acq"></span>
+		<span class="h acr"></span>
+		<span class="h act"></span>
+		<span class="h acs"></span>
+		<span class="h acw"></span>
+		<span class="h acx"></span>
+		<span class="h acy"></span>
+		<span class="h acz"></span>
+		<span class="h ada"></span>
+		<span class="h adb"></span>
+		<span class="h adc"></span>
+		<span class="h adf"></span>
+		<span class="h adg"></span>
+		<span class="h adh"></span>
+		<span class="h adi"></span>
+		<span class="h adj"></span>
+		<span class="h adk"></span>
+		<span class="h adl"></span>
+		<span class="h adm"></span>
+		<span class="h adn"></span>
+		<span class="h ado"></span>
+		<span class="h adr"></span>
+		<span class="h ads"></span>
+		<span class="h adt"></span>
+		<span class="h adv"></span>
+		<span class="h adu"></span>
+		<span class="h adx"></span>
+		<span class="h adw"></span>
+		<span class="h ady"></span>
+		<span class="h adz"></span>
+		<span class="h aea"></span>
+		<span class="h aec"></span>
+		<span class="h aed"></span>
+		<span class="h aee"></span>
+		<span class="h aef"></span>
+		<span class="h aeg"></span>
+		<span class="h aej"></span>
+		<span class="h ael"></span>
+		<span class="h aem"></span>
+		<span class="h aen"></span>
+		<span class="h aeo"></span>
+		<span class="h aep"></span>
+		<span class="h aer"></span>
+		<span class="h aes"></span>
+		<span class="h aet"></span>
+		<span class="h aeu"></span>
+		<span class="h aev"></span>
+		<span class="h aew"></span>
+		<span class="h aex"></span>
+		<span class="h aey"></span>
+		<span class="h aez"></span>
+		<span class="h afa"></span>
+		<span class="h afb"></span>
+		<span class="h afc"></span>
+		<span class="h afd"></span>
+		<span class="h afe"></span>
+		<span class="h aff"></span>
+		<span class="h afg"></span>
+		<span class="h afi"></span>
+		<span class="h afj"></span>
+		<span class="h afk"></span>
+		<span class="h afm"></span>
+		<span class="h afn"></span>
+		<span class="h afp"></span>
+		<span class="h afq"></span>
+		<span class="h aft"></span>
+		<span class="h afu"></span>
+		<span class="h afv"></span>
+		<span class="h afw"></span>
+		<span class="h afx"></span>
+		<span class="h afy"></span>
+		<span class="h afz"></span>
+		<span class="h agb"></span>
+		<span class="h agc"></span>
+		<span class="h aga"></span>
+		<span class="h agd"></span>
+		<span class="h agg"></span>
+		<span class="h agh"></span>
+		<span class="h agk"></span>
+		<span class="h agn"></span>
+		<span class="h agp"></span>
+		<span class="h agq"></span>
+		<span class="h agr"></span>
+		<span class="h ags"></span>
+		<span class="h agt"></span>
+		<span class="h agu"></span>
+		<span class="h agv"></span>
+		<span class="h agw"></span>
+		<span class="h agx"></span>
+		<span class="h agy"></span>
+		<span class="h agz"></span>
+		<span class="h ahb"></span>
+		<span class="h ahc"></span>
+		<span class="h ahe"></span>
+		<span class="h ahf"></span>
+		<span class="h ahg"></span>
+		<span class="h ahh"></span>
+		<span class="h ahi"></span>
+		<span class="h ahj"></span>
+		<span class="h ahk"></span>
+		<span class="h ahl"></span>
+		<span class="h ahm"></span>
+		<span class="h ahs"></span>
+		<span class="h ahu"></span>
+		<span class="h aht"></span>
+		<span class="h ahw"></span>
+		<span class="h ahz"></span>
+		<span class="h aia"></span>
+		<span class="h aib"></span>
+		<span class="h aic"></span>
+		<span class="h aie"></span>
+		<span class="h aid"></span>
+		<span class="h aif"></span>
+		<span class="h aii"></span>
+		<span class="h aij"></span>
+		<span class="h ail"></span>
+		<span class="h aim"></span>
+		<span class="h aio"></span>
+		<span class="h ain"></span>
+		<span class="h aip"></span>
+		<span class="h ajr"></span>
+		<span class="h air"></span>
+		<span class="h aiq"></span>
+		<span class="h ais"></span>
+		<span class="h ait"></span>
+		<span class="h aiv"></span>
+		<span class="h aiu"></span>
+		<span class="h aiw"></span>
+		<span class="h aix"></span>
+		<span class="h aiy"></span>
+		<span class="h aiz"></span>
+		<span class="h aja"></span>
+		<span class="h ajb"></span>
+		<span class="h ajc"></span>
+		<span class="h ajd"></span>
+		<span class="h aje"></span>
+		<span class="h ajf"></span>
+		<span class="h ajg"></span>
+		<span class="h aji"></span>
+		<span class="h ajl"></span>
+		<span class="h ajo"></span>
+		<span class="h ajp"></span>
+		<span class="h ajq"></span>
+		<span class="h ajs"></span>
+		<span class="h ajt"></span>
+		<span class="h aju"></span>
+		<span class="h ajv"></span>
+		<span class="h ajw"></span>
+		<span class="h ajx"></span>
+		<span class="h ajy"></span>
+		<span class="h akd"></span>
+		<span class="h akh"></span>
+		<span class="h aki"></span>
+		<span class="h akj"></span>
+		<span class="h akk"></span>
+	</div>
+
+	<div class="bx">
+		<span class="h uz"></span>
+		<span class="h uy"></span>
+		<span class="h vo"></span>
+		<span class="h wl"></span>
+		<span class="h wn"></span>
+		<span class="h wq"></span>
+		<span class="h yx"></span>
+		<span class="h aab"></span>
+		<span class="h aaa"></span>
+		<span class="h aaf"></span>
+		<span class="h aao"></span>
+		<span class="h aat"></span>
+		<span class="h aas"></span>
+		<span class="h aba"></span>
+		<span class="h abc"></span>
+		<span class="h abb"></span>
+		<span class="h abo"></span>
+		<span class="h abt"></span>
+		<span class="h abs"></span>
+		<span class="h abx"></span>
+		<span class="h aby"></span>
+		<span class="h abz"></span>
+		<span class="h abw"></span>
+		<span class="h abv"></span>
+		<span class="h acc"></span>
+		<span class="h acl"></span>
+		<span class="h acm"></span>
+		<span class="h acv"></span>
+		<span class="h acu"></span>
+		<span class="h ade"></span>
+		<span class="h add"></span>
+		<span class="h adq"></span>
+		<span class="h adp"></span>
+		<span class="h aeb"></span>
+		<span class="h aei"></span>
+		<span class="h aeh"></span>
+		<span class="h aeq"></span>
+		<span class="h afh"></span>
+		<span class="h afl"></span>
+		<span class="h afo"></span>
+		<span class="h afs"></span>
+		<span class="h afr"></span>
+		<span class="h agf"></span>
+		<span class="h age"></span>
+		<span class="h agj"></span>
+		<span class="h agi"></span>
+		<span class="h agm"></span>
+		<span class="h agl"></span>
+		<span class="h ago"></span>
+		<span class="h aha"></span>
+		<span class="h ahn"></span>
+		<span class="h ahp"></span>
+		<span class="h aho"></span>
+		<span class="h ahq"></span>
+		<span class="h ahr"></span>
+		<span class="h ahv"></span>
+		<span class="h ahy"></span>
+		<span class="h ahx"></span>
+		<span class="h aih"></span>
+		<span class="h aig"></span>
+		<span class="h aik"></span>
+		<span class="h ajh"></span>
+		<span class="h ajk"></span>
+		<span class="h ajj"></span>
+		<span class="h ajn"></span>
+		<span class="h ajm"></span>
+		<span class="h aka"></span>
+		<span class="h ajz"></span>
+		<span class="h akc"></span>
+		<span class="h akb"></span>
+		<span class="h akg"></span>
+		<span class="h akf"></span>
+		<span class="h ake"></span>
+		<span class="h akl"></span>
+		<span class="h akn"></span>
+		<span class="h akm"></span>
+		<span class="h ako"></span>
+		<span class="h akq"></span>
+		<span class="h akp"></span>
+		<span class="h aks"></span>
+		<span class="h akr"></span>
+	</div>
+
+	<h3 id="examples">Examples</h3>
+
+	<p>Entypo icons can be placed in just about any other element, so long as they are a separate HTML element (e.g., a
+		<code>&lt;span&gt;</code>). See the examples below for how to put them to use.</p>
+
+	<div class="bv" data-example-id="">
+		<button class="cg tr" type="button">
+			<span class="h aiv"></span>
+			Like
+		</button>
+		<button class="cg fp" type="button">
+			<span class="h aiv"></span>
+			Liked!
+		</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">class=</span><span class="al">"btn btn-default-outline"</span>
+		<span class="am">type=</span><span class="al">"button"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-thumbs-up"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Like
+		<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">class=</span><span class="al">"btn btn-primary"</span>
+		<span class="am">type=</span><span class="al">"button"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-thumbs-up"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Liked!
+		<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<div class="bv" data-example-id="">
+		<ul class="nav oo">
+			<li class="active">
+				<a href="#">
+					<span class="h xj"></span>
+					Discussions
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="h wr"></span>
+					Notifications
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="h ajv"></span>
+					Members
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;ul</span>
+		<span class="am">class=</span><span class="al">"nav nav-pills"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"active"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-chat"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Discussions
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;li&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-bell"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Notifications
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;li&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-users"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Members
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;/ul&gt;</span></code></pre>
+	</div>
+
+	<h2 id="outline-buttons">Outline buttons</h2>
+
+	<p>Replace the provided button variant classes like <code>.btn-primary</code> with <code>.btn-primary-outline</code>
+		to switch from the solid gradient backgrounds buttons to outline ones.</p>
+
+	<div class="bv" data-example-id="">
+		<button type="button" class="cg fv tr">Default</button>
+		<button type="button" class="cg fv ts">Primary</button>
+		<button type="button" class="cg fv tt">Success</button>
+		<button type="button" class="cg fv tu">Info</button>
+		<button type="button" class="cg fv tv">Warning</button>
+		<button type="button" class="cg fv tw">Danger</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-default-outline"</span><span class="aw">&gt;</span>Default<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-primary-outline"</span><span class="aw">&gt;</span>Primary<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-success-outline"</span><span class="aw">&gt;</span>Success<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-info-outline"</span><span class="aw">&gt;</span>Info<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-warning-outline"</span><span class="aw">&gt;</span>Warning<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-danger-outline"</span><span class="aw">&gt;</span>Danger<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<div class="bv" data-example-id="">
+		<button type="button" class="cg tr">Default</button>
+		<button type="button" class="cg ts">Primary</button>
+		<button type="button" class="cg tt">Success</button>
+		<button type="button" class="cg tu">Info</button>
+		<button type="button" class="cg tv">Warning</button>
+		<button type="button" class="cg tw">Danger</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-default-outline"</span><span class="aw">&gt;</span>Default<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-primary-outline"</span><span class="aw">&gt;</span>Primary<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-success-outline"</span><span class="aw">&gt;</span>Success<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-info-outline"</span><span class="aw">&gt;</span>Info<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-warning-outline"</span><span class="aw">&gt;</span>Warning<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-danger-outline"</span><span class="aw">&gt;</span>Danger<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<div class="bv" data-example-id="">
+		<button type="button" class="cg fx tr">Default</button>
+		<button type="button" class="cg fx ts">Primary</button>
+		<button type="button" class="cg fx tt">Success</button>
+		<button type="button" class="cg fx tu">Info</button>
+		<button type="button" class="cg fx tv">Warning</button>
+		<button type="button" class="cg fx tw">Danger</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-default-outline"</span><span class="aw">&gt;</span>Default<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-primary-outline"</span><span class="aw">&gt;</span>Primary<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-success-outline"</span><span class="aw">&gt;</span>Success<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-info-outline"</span><span class="aw">&gt;</span>Info<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-warning-outline"</span><span class="aw">&gt;</span>Warning<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-danger-outline"</span><span class="aw">&gt;</span>Danger<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<div class="bv" data-example-id="">
+		<button type="button" class="cg fz tr">Default</button>
+		<button type="button" class="cg fz ts">Primary</button>
+		<button type="button" class="cg fz tt">Success</button>
+		<button type="button" class="cg fz tu">Info</button>
+		<button type="button" class="cg fz tv">Warning</button>
+		<button type="button" class="cg fz tw">Danger</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-default-outline"</span><span class="aw">&gt;</span>Default<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-primary-outline"</span><span class="aw">&gt;</span>Primary<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-success-outline"</span><span class="aw">&gt;</span>Success<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-info-outline"</span><span class="aw">&gt;</span>Info<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-warning-outline"</span><span class="aw">&gt;</span>Warning<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-danger-outline"</span><span class="aw">&gt;</span>Danger<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<h2 id="pill-buttons">Pill buttons</h2>
+
+	<p>Add <code>.btn-pill</code> to any button to make them more rounded.</p>
+
+	<div class="bv" data-example-id="">
+		<button type="button" class="cg fv ub fm">Default</button>
+		<button type="button" class="cg fv ub fp">Primary</button>
+		<button type="button" class="cg fv ub fq">Success</button>
+		<button type="button" class="cg fv ub fr">Info</button>
+		<button type="button" class="cg fv ub fs">Warning</button>
+		<button type="button" class="cg fv ub ft">Danger</button>
+		<button type="button" class="cg fv ub fu">Link</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-pill btn-default"</span><span class="aw">&gt;</span>Default<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-pill btn-primary"</span><span class="aw">&gt;</span>Primary<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-pill btn-success"</span><span class="aw">&gt;</span>Success<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-pill btn-info"</span><span class="aw">&gt;</span>Info<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-pill btn-warning"</span><span class="aw">&gt;</span>Warning<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-pill btn-danger"</span><span class="aw">&gt;</span>Danger<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-lg btn-pill btn-link"</span><span class="aw">&gt;</span>Link<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<div class="bv" data-example-id="">
+		<button type="button" class="cg ub fm">Default</button>
+		<button type="button" class="cg ub fp">Primary</button>
+		<button type="button" class="cg ub fq">Success</button>
+		<button type="button" class="cg ub fr">Info</button>
+		<button type="button" class="cg ub fs">Warning</button>
+		<button type="button" class="cg ub ft">Danger</button>
+		<button type="button" class="cg ub fu">Link</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-pill btn-default"</span><span class="aw">&gt;</span>Default<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-pill btn-primary"</span><span class="aw">&gt;</span>Primary<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-pill btn-success"</span><span class="aw">&gt;</span>Success<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-pill btn-info"</span><span class="aw">&gt;</span>Info<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-pill btn-warning"</span><span class="aw">&gt;</span>Warning<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-pill btn-danger"</span><span class="aw">&gt;</span>Danger<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-pill btn-link"</span><span class="aw">&gt;</span>Link<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<div class="bv" data-example-id="">
+		<button type="button" class="cg fx ub fm">Default</button>
+		<button type="button" class="cg fx ub fp">Primary</button>
+		<button type="button" class="cg fx ub fq">Success</button>
+		<button type="button" class="cg fx ub fr">Info</button>
+		<button type="button" class="cg fx ub fs">Warning</button>
+		<button type="button" class="cg fx ub ft">Danger</button>
+		<button type="button" class="cg fx ub fu">Link</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-pill btn-default"</span><span class="aw">&gt;</span>Default<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-pill btn-primary"</span><span class="aw">&gt;</span>Primary<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-pill btn-success"</span><span class="aw">&gt;</span>Success<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-pill btn-info"</span><span class="aw">&gt;</span>Info<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-pill btn-warning"</span><span class="aw">&gt;</span>Warning<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-pill btn-danger"</span><span class="aw">&gt;</span>Danger<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-sm btn-pill btn-link"</span><span class="aw">&gt;</span>Link<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<div class="bv" data-example-id="">
+		<button type="button" class="cg fz ub fm">Default</button>
+		<button type="button" class="cg fz ub fp">Primary</button>
+		<button type="button" class="cg fz ub fq">Success</button>
+		<button type="button" class="cg fz ub fr">Info</button>
+		<button type="button" class="cg fz ub fs">Warning</button>
+		<button type="button" class="cg fz ub ft">Danger</button>
+		<button type="button" class="cg fz ub fu">Link</button>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;button</span>
+		<span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-pill btn-default"</span><span class="aw">&gt;</span>Default<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-pill btn-primary"</span><span class="aw">&gt;</span>Primary<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-pill btn-success"</span><span class="aw">&gt;</span>Success<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-pill btn-info"</span><span class="aw">&gt;</span>Info<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-pill btn-warning"</span><span class="aw">&gt;</span>Warning<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-pill btn-danger"</span><span class="aw">&gt;</span>Danger<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn btn-xs btn-pill btn-link"</span><span class="aw">&gt;</span>Link<span class="aw">&lt;/button&gt;</span></code></pre>
+	</div>
+
+	<h2 id="avatar-list">Avatar list</h2>
+
+	<p>Join a series of icons into a single horizontal grouping.</p>
+
+	<div class="bv" data-example-id="">
+		<ul class="ann">
+			<li class="ano">
+				<img class="cu" src="../assets/img/avatar-dhg.png" />
+			</li>
+			<li class="ano">
+				<img class="cu" src="../assets/img/avatar-mdo.png" />
+			</li>
+			<li class="ano">
+				<img class="cu" src="../assets/img/avatar-fat.jpg" />
+			</li>
+		</ul>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;ul</span>
+		<span class="am">class=</span><span class="al">"avatar-list"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"avatar-list-item"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"img-circle"</span> <span class="am">src=</span><span class="al">"../assets/img/avatar-dhg.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"avatar-list-item"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"img-circle"</span> <span class="am">src=</span><span class="al">"../assets/img/avatar-mdo.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"avatar-list-item"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"img-circle"</span> <span class="am">src=</span><span class="al">"../assets/img/avatar-fat.jpg"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;/ul&gt;</span></code></pre>
+	</div>
+
+	<h2 id="growl">Growl</h2>
+
+	<p>Use the Growl plugin to turn any Bootstrap alert into an OS X style notification. Growls are fixed to the top right
+		of your viewport and can be dismissed, just like normal Bootstrap alerts.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="anp anq">
+			<div class="alert alert-dark pt" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"growl growl-static"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"alert alert-dark alert-dismissable"</span>
+		<span class="am">role=</span><span class="al">"alert"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"close"</span>
+		<span class="am">data-dismiss=</span><span class="al">"alert"</span>
+		<span class="am">aria-label=</span><span class="al">"Close"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span> <span class="am">aria-hidden=</span><span class="al">"true"</span><span class="aw">&gt;</span>×<span class="aw">&lt;/span&gt;</span>
+		<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;strong&gt;</span>Well done!<span class="aw">&lt;/strong&gt;</span> You successfully read this
+		important alert message.
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<h2 id="profile-header">Profile header</h2>
+
+	<p>Simple profile headers to show off a user’s profile information</p>
+
+	<div class="bv" data-example-id="">
+		<div class="anr dj" style="background-image: url(../assets/img/iceland.jpg); ">
+			<div class="gc">
+				<div class="ans">
+					<img class="cu qi" src="../assets/img/avatar-dhg.png" />
+
+					<h3 class="anu">Dave Gamache</h3>
+
+					<p class="ant">I wish i was a little bit taller, wish i was a baller, wish i had a girl… also.</p>
+				</div>
+			</div>
+			<nav class="anv">
+				<ul class="nav om">
+					<li class="active"><a href="#">Photos</a></li>
+					<li><a href="#">Others</a></li>
+					<li><a href="#">Anothers</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"profile-header text-center"</span>
+		<span class="am">style=</span><span class="al">"background-image: url(../assets/img/iceland.jpg); "</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"container-fluid"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"container-inner"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"img-circle media-object"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-dhg.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;h3</span>
+		<span class="am">class=</span><span class="al">"profile-header-user"</span><span class="aw">&gt;</span>Dave
+		Gamache<span class="aw">&lt;/h3&gt;</span>
+		<span class="aw">&lt;p</span>
+		<span class="am">class=</span><span class="al">"profile-header-bio"</span><span class="aw">&gt;</span>I wish i was a
+		little bit taller, wish i was a baller, wish i had a girl… also.<span class="aw">&lt;/p&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;nav</span>
+		<span class="am">class=</span><span class="al">"profile-header-nav"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;ul</span> <span class="am">class=</span><span class="al">"nav nav-tabs"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;li</span> <span class="am">class=</span><span class="al">"active"</span><span class="aw">&gt;&lt;a</span>
+		<span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Photos<span class="aw">&lt;/a&gt;&lt;/li&gt;</span>
+		<span class="aw">&lt;li&gt;&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Others<span class="aw">&lt;/a&gt;&lt;/li&gt;</span>
+		<span class="aw">&lt;li&gt;&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Anothers<span class="aw">&lt;/a&gt;&lt;/li&gt;</span>
+		<span class="aw">&lt;/ul&gt;</span>
+		<span class="aw">&lt;/nav&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<h2 id="panel-profile">Panel profile</h2>
+
+	<p>Feature a user’s profile with the <code>.panel-profile</code> variant.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="alj">
+			<div class="gd">
+				<div class="ha">
+					<div class="qw rd aof">
+						<div class="qy" style="background-image: url(https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11312291_348657648678007_1202941362_n.jpg);"></div>
+						<div class="qx dj">
+							<img class="aog" src="../assets/img/avatar-fat.jpg" />
+							<h5 class="qz">Jacob Thornton</h5>
+
+							<p class="alt">Big belly rude boy, million dollar hustler. Unemployed.</p>
+							<button class="cg ts fx">
+								<span class="h vb"></span> Follow
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="ha">
+					<div class="qw rd aof">
+						<div class="qy" style="background-image: url(https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11240760_365538423656311_112029877_n.jpg);"></div>
+						<div class="qx dj">
+							<img class="aog" src="../assets/img/avatar-mdo.png" />
+							<h5 class="qz">Mark Otto</h5>
+
+							<p class="alt">GitHub and Bootstrap. Formerly at Twitter. Huge nerd.</p>
+							<button class="cg ts fx">
+								<span class="h vb"></span> Follow
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"m-t"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"row"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"col-md-6"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"panel panel-default panel-profile"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"panel-heading"</span>
+		<span class="am">style=</span><span class="al">"background-image: url(https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11312291_348657648678007_1202941362_n.jpg);"</span><span class="aw">&gt;&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"panel-body text-center"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"panel-profile-img"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-fat.jpg"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;h5</span> <span class="am">class=</span><span class="al">"panel-title"</span><span class="aw">&gt;</span>Jacob
+		Thornton<span class="aw">&lt;/h5&gt;</span>
+		<span class="aw">&lt;p</span>
+		<span class="am">class=</span><span class="al">"m-b-md"</span><span class="aw">&gt;</span>Big belly rude boy,
+		million dollar hustler. Unemployed.<span class="aw">&lt;/p&gt;</span>
+		<span class="aw">&lt;button</span>
+		<span class="am">class=</span><span class="al">"btn btn-primary-outline btn-sm"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-add-user"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Follow
+		<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"col-md-6"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"panel panel-default panel-profile"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"panel-heading"</span>
+		<span class="am">style=</span><span class="al">"background-image: url(https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11240760_365538423656311_112029877_n.jpg);"</span><span class="aw">&gt;&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"panel-body text-center"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"panel-profile-img"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-mdo.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;h5</span> <span class="am">class=</span><span class="al">"panel-title"</span><span class="aw">&gt;</span>Mark
+		Otto<span class="aw">&lt;/h5&gt;</span>
+		<span class="aw">&lt;p</span>
+		<span class="am">class=</span><span class="al">"m-b-md"</span><span class="aw">&gt;</span>GitHub and Bootstrap.
+		Formerly at Twitter. Huge nerd.<span class="aw">&lt;/p&gt;</span>
+		<span class="aw">&lt;button</span>
+		<span class="am">class=</span><span class="al">"btn btn-primary-outline btn-sm"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-add-user"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Follow
+		<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<h2 id="panel-link-list">Panel link list</h2>
+
+	<p>Simple panel modifier for link lists.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="qw rd aoj">
+			<div class="qx">
+				© 2015 Bootstrap
+
+				<a href="#">About</a>
+				<a href="#">Help</a>
+				<a href="#">Terms</a>
+				<a href="#">Privacy</a>
+				<a href="#">Cookies</a>
+				<a href="#">Ads </a>
+
+				<a href="#">info</a>
+				<a href="#">Brand</a>
+				<a href="#">Blog</a>
+				<a href="#">Status</a>
+				<a href="#">Apps</a>
+				<a href="#">Jobs</a>
+				<a href="#">Advertise</a>
+			</div>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"panel panel-default panel-link-list"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"panel-body"</span><span class="aw">&gt;</span>
+		© 2015 Bootstrap
+
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>About<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Help<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Terms<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Privacy<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Cookies<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Ads
+		<span class="aw">&lt;/a&gt;</span>
+
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>info<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Brand<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Blog<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Status<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Apps<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Jobs<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Advertise<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<h2 id="media-list-steam">Media list steam</h2>
+
+	<div class="bv" data-example-id="">
+		<ul class="qp anw aox">
+			<li class="qg amk">
+				<a class="qk" href="#">
+					<img class="qi cu" src="../assets/img/avatar-dhg.png" />
+				</a>
+
+				<div class="qh">
+					<div class="qo">
+						<small class="eg">4 min</small>
+						<h5 class="ale">Dave Gamache</h5>
+					</div>
+					<p>
+						Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo
+						risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget
+						quam. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient
+						montes, nascetur ridiculus mus.
+					</p>
+					<img class="any" src="../assets/img/instagram_17.jpg" />
+					<ul class="qp all">
+						<li class="qg">
+							<a class="qk" href="#">
+								<img class="qi cu" src="../assets/img/avatar-fat.jpg" />
+							</a>
+
+							<div class="qh">
+								<strong>Jacon Thornton:</strong>
+								Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum
+								faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus
+								magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+							</div>
+						</li>
+						<li class="qg">
+							<a class="qk" href="#">
+								<img class="qi cu" src="../assets/img/avatar-mdo.png" />
+							</a>
+
+							<div class="qh">
+								<strong>Mark Otto:</strong>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor
+								mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;ul</span>
+		<span class="am">class=</span><span class="al">"media-list media-list-stream c-w-md"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;li</span> <span class="am">class=</span><span class="al">"media p-a"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">class=</span><span class="al">"media-left"</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"media-object img-circle"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-dhg.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"media-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media-heading"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;small</span>
+		<span class="am">class=</span><span class="al">"pull-right"</span><span class="aw">&gt;</span>4 min<span class="aw">&lt;/small&gt;</span>
+		<span class="aw">&lt;h5</span>
+		<span class="am">class=</span><span class="al">"m-b-0"</span><span class="aw">&gt;</span>Dave
+		Gamache<span class="aw">&lt;/h5&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;p&gt;</span>
+		Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus,
+		porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum
+		id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+		ridiculus mus.
+		<span class="aw">&lt;/p&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"media-body-inline-img"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/instagram_17.jpg"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;ul</span>
+		<span class="am">class=</span><span class="al">"media-list m-b"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"media"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">class=</span><span class="al">"media-left"</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"media-object img-circle"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-fat.jpg"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"media-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;strong&gt;</span>Jacon Thornton:<span class="aw">&lt;/strong&gt;</span>
+		Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+		auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl
+		consectetur et. Sed posuere consectetur est at lobortis.
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"media"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">class=</span><span class="al">"media-left"</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"media-object img-circle"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-mdo.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"media-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;strong&gt;</span>Mark Otto:<span class="aw">&lt;/strong&gt;</span>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+		condimentum nibh, ut fermentum massa justo sit amet risus.
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;/ul&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;/ul&gt;</span></code></pre>
+	</div>
+
+	<h2 id="media-list-conversation">Media list conversation</h2>
+
+	<div class="bv" data-example-id="">
+		<ul class="qp aoa aox">
+			<li class="qg aod alt">
+				<div class="qh">
+					<div class="aob">
+						Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a
+						pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac
+						consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
+					</div>
+					<div class="aoc">
+						<small class="dp">
+							<a href="#">Dave Gamache</a> at 4:20PM
+						</small>
+					</div>
+				</div>
+				<a class="qj" href="#">
+					<img class="cu qi" src="../assets/img/avatar-dhg.png" />
+				</a>
+			</li>
+			<li class="qg alt">
+				<a class="qk" href="#">
+					<img class="cu qi" src="../assets/img/avatar-fat.jpg" />
+				</a>
+
+				<div class="qh">
+					<div class="aob">
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat
+						porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl
+						consectetur et.
+					</div>
+					<div class="aob">
+						Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cras justo
+						odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at
+						eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis
+						ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+					</div>
+					<div class="aob">
+						Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Integer posuere erat a ante venenatis
+						dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida
+						at eget metus.
+					</div>
+					<div class="aoc">
+						<small class="dp">
+							<a href="#">Fat</a> at 4:28PM
+						</small>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;ul</span>
+		<span class="am">class=</span><span class="al">"media-list media-list-conversation c-w-md"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"media media-current-user m-b-md"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"media-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media-body-text"</span><span class="aw">&gt;</span>
+		Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra
+		augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac,
+		vestibulum at eros. Sed posuere consectetur est at lobortis.
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media-footer"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;small</span>
+		<span class="am">class=</span><span class="al">"text-muted"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Dave
+		Gamache<span class="aw">&lt;/a&gt;</span> at 4:20PM
+		<span class="aw">&lt;/small&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">class=</span><span class="al">"media-right"</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"img-circle media-object"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-dhg.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;li</span> <span class="am">class=</span><span class="al">"media m-b-md"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">class=</span><span class="al">"media-left"</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"img-circle media-object"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-fat.jpg"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"media-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media-body-text"</span><span class="aw">&gt;</span>
+		Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat
+		porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+		et.
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media-body-text"</span><span class="aw">&gt;</span>
+		Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio,
+		dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent
+		commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo.
+		Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media-body-text"</span><span class="aw">&gt;</span>
+		Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus
+		posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media-footer"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;small</span>
+		<span class="am">class=</span><span class="al">"text-muted"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>Fat<span class="aw">&lt;/a&gt;</span>
+		at 4:28PM
+		<span class="aw">&lt;/small&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;/ul&gt;</span></code></pre>
+	</div>
+
+	<h2 id="media-list-users">Media list users</h2>
+
+	<div class="bv" data-example-id="">
+		<ul class="qp cj ca">
+			<li class="b">
+				<div class="qg">
+					<a class="qk" href="#">
+						<img class="qi cu" src="../assets/img/avatar-fat.jpg" />
+					</a>
+
+					<div class="qh">
+						<button class="cg ts fx eg">
+							<span class="h vb"></span> Follow
+						</button>
+						<strong>Jacob Thornton</strong>
+						<small>@fat - San Francisco</small>
+					</div>
+				</div>
+			</li>
+			<li class="b">
+				<div class="qg">
+					<a class="qk" href="#">
+						<img class="qi cu" src="../assets/img/avatar-dhg.png" />
+					</a>
+
+					<div class="qh">
+						<button class="cg ts fx eg">
+							<span class="h vb"></span> Follow
+						</button>
+						<strong>Dave Gamache</strong>
+						<small>@dhg - Palo Alto</small>
+					</div>
+				</div>
+			</li>
+			<li class="b">
+				<div class="qg">
+					<a class="qk" href="#">
+						<img class="qi cu" src="../assets/img/avatar-mdo.png" />
+					</a>
+
+					<div class="qh">
+						<button class="cg ts fx eg">
+							<span class="h vb"></span> Follow
+						</button>
+						<strong>Mark Otto</strong>
+						<small>@mdo - San Francisco</small>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;ul</span>
+		<span class="am">class=</span><span class="al">"media-list media-list-users list-group"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"list-group-item"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">class=</span><span class="al">"media-left"</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"media-object img-circle"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-fat.jpg"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"media-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">class=</span><span class="al">"btn btn-primary-outline btn-sm pull-right"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-add-user"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Follow
+		<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;strong&gt;</span>Jacob Thornton<span class="aw">&lt;/strong&gt;</span>
+		<span class="aw">&lt;small&gt;</span>@fat - San Francisco<span class="aw">&lt;/small&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"list-group-item"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">class=</span><span class="al">"media-left"</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"media-object img-circle"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-dhg.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"media-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">class=</span><span class="al">"btn btn-primary-outline btn-sm pull-right"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-add-user"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Follow
+		<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;strong&gt;</span>Dave Gamache<span class="aw">&lt;/strong&gt;</span>
+		<span class="aw">&lt;small&gt;</span>@dhg - Palo Alto<span class="aw">&lt;/small&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;li</span>
+		<span class="am">class=</span><span class="al">"list-group-item"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"media"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;a</span> <span class="am">class=</span><span class="al">"media-left"</span> <span class="am">href=</span><span class="al">"#"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">class=</span><span class="al">"media-object img-circle"</span>
+		<span class="am">src=</span><span class="al">"../assets/img/avatar-mdo.png"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/a&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"media-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">class=</span><span class="al">"btn btn-primary-outline btn-sm pull-right"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"icon icon-add-user"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Follow
+		<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;strong&gt;</span>Mark Otto<span class="aw">&lt;/strong&gt;</span>
+		<span class="aw">&lt;small&gt;</span>@mdo - San Francisco<span class="aw">&lt;/small&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/li&gt;</span>
+		<span class="aw">&lt;/ul&gt;</span></code></pre>
+	</div>
+
+	<h2 id="custom-form-controls">Custom form controls</h2>
+
+	<p>Custom select menus can be easily created for browsers that support the styles.</p>
+
+	<div class="bv" data-example-id="">
+		<select class="ud">
+			<option>Default</option>
+			<option>First option</option>
+			<option>Another option</option>
+			<option>Alternative</option>
+			<option>Last one</option>
+		</select>
+
+		<select class="ud ue">
+			<option>Default</option>
+			<option>First option</option>
+			<option>Another option</option>
+			<option>Alternative</option>
+			<option>Last one</option>
+		</select>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;select</span>
+		<span class="am">class=</span><span class="al">"custom-select"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Default<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>First option<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Another option<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Alternative<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Last one<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;/select&gt;</span>
+
+		<span class="aw">&lt;select</span>
+		<span class="am">class=</span><span class="al">"custom-select custom-select-sm"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Default<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>First option<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Another option<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Alternative<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Last one<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;/select&gt;</span></code></pre>
+	</div>
+
+	<p>Custom selects support the <code>disabled</code> attribute as well.</p>
+
+	<div class="bv" data-example-id="">
+		<select class="ud" disabled="">
+			<option>Default</option>
+			<option>First option</option>
+			<option>Another option</option>
+			<option>Alternative</option>
+			<option>Last one</option>
+		</select>
+
+		<select class="ud ue" disabled="">
+			<option>Default</option>
+			<option>First option</option>
+			<option>Another option</option>
+			<option>Alternative</option>
+			<option>Last one</option>
+		</select>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;select</span>
+		<span class="am">class=</span><span class="al">"custom-select"</span>
+		<span class="am">disabled</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Default<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>First option<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Another option<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Alternative<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Last one<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;/select&gt;</span>
+
+		<span class="aw">&lt;select</span>
+		<span class="am">class=</span><span class="al">"custom-select custom-select-sm"</span>
+		<span class="am">disabled</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Default<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>First option<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Another option<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Alternative<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;option&gt;</span>Last one<span class="aw">&lt;/option&gt;</span>
+		<span class="aw">&lt;/select&gt;</span></code></pre>
+	</div>
+
+	<p>Custom checkboxes and radios are built on the default Bootstrap checkboxes and radios. Add a couple extra classes
+		and the indicator and you should be all set.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="ev uf uj">
+			<label>
+				<input type="checkbox" />
+				<span class="ug"></span>
+				Check this custom checkbox
+			</label>
+		</div>
+		<div class="ev uf uj">
+			<label>
+				<input type="checkbox" checked="" />
+				<span class="ug"></span>
+				This custom checkbox is checked
+			</label>
+		</div>
+		<div class="ev uf uj">
+			<label>
+				<input type="checkbox" disabled="" />
+				<span class="ug"></span>
+				This custom checkbox is disabled
+			</label>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"checkbox custom-control custom-checkbox"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"checkbox"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Check this custom checkbox
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"checkbox custom-control custom-checkbox"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"checkbox"</span> <span class="am">checked</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		This custom checkbox is checked
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"checkbox custom-control custom-checkbox"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"checkbox"</span> <span class="am">disabled</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		This custom checkbox is disabled
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<p>They can be done inline, too.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="ex uf uj">
+			<label>
+				<input type="checkbox" />
+				<span class="ug"></span>
+				Check this custom checkbox
+			</label>
+		</div>
+		<div class="ex uf uj">
+			<label>
+				<input type="checkbox" checked="" />
+				<span class="ug"></span>
+				This custom checkbox is checked
+			</label>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"checkbox-inline custom-control custom-checkbox"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"checkbox"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Check this custom checkbox
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"checkbox-inline custom-control custom-checkbox"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"checkbox"</span> <span class="am">checked</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		This custom checkbox is checked
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<p>Same goes with radio inputs.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="eu uf uk">
+			<label>
+				<input type="radio" id="radio1" name="radio" />
+				<span class="ug"></span>
+				Toggle this custom radio
+			</label>
+		</div>
+		<div class="eu uf uk">
+			<label>
+				<input type="radio" id="radio2" name="radio" />
+				<span class="ug"></span>
+				Or toggle this other custom radio
+			</label>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"radio custom-control custom-radio"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"radio"</span>
+		<span class="am">id=</span><span class="al">"radio1"</span>
+		<span class="am">name=</span><span class="al">"radio"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Toggle this custom radio
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"radio custom-control custom-radio"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"radio"</span>
+		<span class="am">id=</span><span class="al">"radio2"</span>
+		<span class="am">name=</span><span class="al">"radio"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Or toggle this other custom radio
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<p>And they can also be inline.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="ew uf uk">
+			<label>
+				<input type="radio" id="radio1" name="radio" />
+				<span class="ug"></span>
+				Toggle this custom radio
+			</label>
+		</div>
+		<div class="ew uf uk">
+			<label>
+				<input type="radio" id="radio2" name="radio" />
+				<span class="ug"></span>
+				Or toggle this other custom radio
+			</label>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"radio-inline custom-control custom-radio"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"radio"</span>
+		<span class="am">id=</span><span class="al">"radio1"</span>
+		<span class="am">name=</span><span class="al">"radio"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Toggle this custom radio
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"radio-inline custom-control custom-radio"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;label&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"radio"</span>
+		<span class="am">id=</span><span class="al">"radio2"</span>
+		<span class="am">name=</span><span class="al">"radio"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;span</span>
+		<span class="am">class=</span><span class="al">"custom-control-indicator"</span><span class="aw">&gt;&lt;/span&gt;</span>
+		Or toggle this other custom radio
+		<span class="aw">&lt;/label&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<h2 id="custom-modals">Custom Modals</h2>
+
+	<p>Support for multiple, stackable modal bodies and scrolling bodies using the new <code>.modal-body-scroller</code>
+		modifier.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="cd">
+			<div class="modal-dialog aoy">
+				<div class="modal-content">
+					<div class="d">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Medium Modal</h4>
+					</div>
+					<div class="modal-body up">
+						<p>Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam.
+							Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec
+							ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at
+							eros.</p>
+
+						<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Etiam
+							porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+						<p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Nullam
+							quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit
+							aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
+
+						<p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent
+							commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+
+						<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus
+							posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus
+							et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id
+							nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Curabitur blandit tempus
+							porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam
+							quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget
+							quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+							sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+						<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis
+							consectetur purus sit amet fermentum.</p>
+					</div>
+
+					<div class="modal-body">
+						<input type="text" class="form-control" placeholder="Message" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal-dialog modal-md"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal-content"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal-header"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"close"</span>
+		<span class="am">data-dismiss=</span><span class="al">"modal"</span>
+		<span class="am">aria-label=</span><span class="al">"Close"</span><span class="aw">&gt;&lt;span</span>
+		<span class="am">aria-hidden=</span><span class="al">"true"</span><span class="aw">&gt;</span><span class="ar">&amp;times;</span><span class="aw">&lt;/span&gt;&lt;/button&gt;</span>
+		<span class="aw">&lt;h4</span> <span class="am">class=</span><span class="al">"modal-title"</span><span class="aw">&gt;</span>Medium
+		Modal<span class="aw">&lt;/h4&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal-body modal-body-scroller"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;p&gt;</span>Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.
+		Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+		Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at
+		eros.<span class="aw">&lt;/p&gt;</span>
+
+		<span class="aw">&lt;p&gt;</span>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est
+		at lobortis. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu
+		leo.<span class="aw">&lt;/p&gt;</span>
+
+		<span class="aw">&lt;p&gt;</span>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est
+		at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus
+		posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+		dui.<span class="aw">&lt;/p&gt;</span>
+
+		<span class="aw">&lt;p&gt;</span>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Donec
+		sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.<span class="aw">&lt;/p&gt;</span>
+
+		<span class="aw">&lt;p&gt;</span>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+		venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque
+		penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="aw">&lt;/p&gt;</span>
+
+		<span class="aw">&lt;p&gt;</span>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+		mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Curabitur blandit
+		tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu
+		leo.<span class="aw">&lt;/p&gt;</span>
+
+		<span class="aw">&lt;p&gt;</span>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
+		sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in,
+		egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+		sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo.<span class="aw">&lt;/p&gt;</span>
+
+		<span class="aw">&lt;p&gt;</span>Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus
+		sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras
+		mattis consectetur purus sit amet fermentum.<span class="aw">&lt;/p&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"modal-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;input</span> <span class="am">type=</span><span class="al">"text"</span> <span class="am">class=</span><span class="al">"form-control"</span>
+		<span class="am">placeholder=</span><span class="al">"Message"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<p>Also, drop the regular footer for a new two-up set of actions using the <code>.modal-actions</code> component.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="cd">
+			<div class="modal-dialog rr">
+				<div class="modal-content">
+					<div class="d">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Small modal</h4>
+					</div>
+					<div class="modal-body">
+						<p>Modal body text...</p>
+					</div>
+					<div class="uq">
+						<button type="button" class="fu ur" data-dismiss="modal">Cancel</button>
+						<button type="button" class="fu ur" data-dismiss="modal">
+							<strong>Continue</strong>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal-dialog modal-sm"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal-content"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal-header"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"close"</span>
+		<span class="am">data-dismiss=</span><span class="al">"modal"</span>
+		<span class="am">aria-label=</span><span class="al">"Close"</span><span class="aw">&gt;&lt;span</span>
+		<span class="am">aria-hidden=</span><span class="al">"true"</span><span class="aw">&gt;</span><span class="ar">&amp;times;</span><span class="aw">&lt;/span&gt;&lt;/button&gt;</span>
+		<span class="aw">&lt;h4</span> <span class="am">class=</span><span class="al">"modal-title"</span><span class="aw">&gt;</span>Small
+		modal<span class="aw">&lt;/h4&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span> <span class="am">class=</span><span class="al">"modal-body"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;p&gt;</span>Modal body text...<span class="aw">&lt;/p&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"modal-actions"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn-link modal-action"</span>
+		<span class="am">data-dismiss=</span><span class="al">"modal"</span><span class="aw">&gt;</span>Cancel<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;button</span> <span class="am">type=</span><span class="al">"button"</span> <span class="am">class=</span><span class="al">"btn-link modal-action"</span>
+		<span class="am">data-dismiss=</span><span class="al">"modal"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;strong&gt;</span>Continue<span class="aw">&lt;/strong&gt;</span>
+		<span class="aw">&lt;/button&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<h2 id="custom-containers">Custom containers</h2>
+
+	<p>We’ve introduced a new component for vertically aligning content with <code>.container-content-middle</code> and
+		<code>.container-content-bottom</code>. This is particularly useful for sign in and other simple pages.</p>
+
+	<div class="bv" data-example-id="">
+		<div class="us">
+			<div class="uu">
+				Vertically centered content.
+			</div>
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"container-fill-height"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;div</span>
+		<span class="am">class=</span><span class="al">"container-content-middle"</span><span class="aw">&gt;</span>
+		Vertically centered content.
+		<span class="aw">&lt;/div&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<h1 id="plugins">Plugins</h1>
+
+	<h2 id="image-grids">Image grids</h2>
+
+	<p>Use the image grid plugin to quickly layout multi sized images in a grid. For the image grid to work properly, it
+		needs to get the raw image sizes (either from a data attribute, like <code>data-width</code> and
+		<code>data-height</code> or you need to wait for image load before calling <code>.imageGrid</code>).</p>
+
+	<h3 id="options">Options</h3>
+
+	<ul>
+		<li>padding: 10,</li>
+		<li>targetHeight: 300,</li>
+		<li>display: ‘inline-block’</li>
+	</ul>
+
+	<h3 id="javascript-api">JavaScript API</h3>
+
+	<div class="bv" data-example-id="">
+		$('.myGrid').imageGrid()
+	</div>
+	<div class="a">
+		<pre><code class="aoz" data-lang="js"><span class="apa">$</span><span class="aov">(</span><span class="bn">'.myGrid'</span><span class="aov">).</span><span class="apa">imageGrid</span><span class="aov">()</span></code></pre>
+	</div>
+
+	<h3 id="data-api">Data Api</h3>
+
+	<div class="bv" data-example-id="">
+		<div data-grid="images">
+			<img data-width="350" data-height="300" src="http://placehold.it/350x300/EEE04A/ffffff" />
+			<img data-width="420" data-height="320" src="http://placehold.it/420x320/5cb85c/ffffff" />
+			<img data-width="320" data-height="380" src="http://placehold.it/320x380/5bc0de/ffffff" />
+			<img data-width="472" data-height="500" src="http://placehold.it/472x500/f0ad4e/ffffff" />
+			<img data-width="540" data-height="360" src="http://placehold.it/540x360/FF3167/ffffff" />
+		</div>
+	</div>
+	<div class="a"><pre><code class="aot" data-lang="html"><span class="aw">&lt;div</span>
+		<span class="am">data-grid=</span><span class="al">"images"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">data-width=</span><span class="al">"350"</span> <span class="am">data-height=</span><span class="al">"300"</span>
+		<span class="am">src=</span><span class="al">"http://placehold.it/350x300/EEE04A/ffffff"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">data-width=</span><span class="al">"420"</span> <span class="am">data-height=</span><span class="al">"320"</span>
+		<span class="am">src=</span><span class="al">"http://placehold.it/420x320/5cb85c/ffffff"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">data-width=</span><span class="al">"320"</span> <span class="am">data-height=</span><span class="al">"380"</span>
+		<span class="am">src=</span><span class="al">"http://placehold.it/320x380/5bc0de/ffffff"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">data-width=</span><span class="al">"472"</span> <span class="am">data-height=</span><span class="al">"500"</span>
+		<span class="am">src=</span><span class="al">"http://placehold.it/472x500/f0ad4e/ffffff"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;img</span> <span class="am">data-width=</span><span class="al">"540"</span> <span class="am">data-height=</span><span class="al">"360"</span>
+		<span class="am">src=</span><span class="al">"http://placehold.it/540x360/FF3167/ffffff"</span><span class="aw">&gt;</span>
+		<span class="aw">&lt;/div&gt;</span></code></pre>
+	</div>
+
+	<h2 id="zoom">Zoom</h2>
+
+	<p>The zoom plugin provides simple image zoom functionality. Add a <code>data-action="zoom"</code> attribute to any
+		image you want to make zoomable. Zoomed images can be closed by scroll, <code>esc</code>, or click. Use the meta key
+		to open raw element in new tab.</p>
+
+	<h3 id="data-api-1">Data API</h3>
+
+	<div class="bv" data-example-id="">
+		<img data-action="zoom" style="width: 150px;" src="../assets/img/avatar-mdo.png" />
+	</div>
+	<div class="a">
+		<pre><code class="aot" data-lang="html"><span class="aw">&lt;img</span>
+			<span class="am">data-action=</span><span class="al">"zoom"</span> <span class="am">style=</span><span class="al">"width: 150px;"</span>
+			<span class="am">src=</span><span class="al">"../assets/img/avatar-mdo.png"</span><span class="aw">&gt;</span></code></pre>
+	</div>
+
+
+	<a class="docs-top" style="display: none" href="#">Back to top</a>
+</div>
+
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/toolkit.js"></script>
+<script src="../assets/js/application.js"></script>
+<script>
+	// execute/clear BS loaders for docs
+	$(function ()
+	{
+		if (window.BS && window.BS.loader && window.BS.loader.length)
+		{
+			while (BS.loader.length)
+			{
+				(BS.loader.pop())()
+			}
+		}
+	})
+</script>
+</body>
+</html>
